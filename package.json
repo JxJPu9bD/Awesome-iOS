@@ -1,0 +1,19 @@
+{
+  "name": "hybrid-example",
+  "version": "1.0.0",
+  "description": "在已有原生项目中与 ReactNative 混合开发样例,",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "react-native bundle --entry-file index.js --bundle-output ./Awesome-iOS/bundle/index.jsbundle --platform ios --assets-dest ./HybridExample/bundle --dev false"
+  },
+  "dependencies": {
+    "eslint": "^3.17.0",
+    "react": "16.3.1",
+    "react-native": "0.55.3"
+  },
+  "author": "Cyandnow",
+  "license": "MIT",
+  "private": true
+}
