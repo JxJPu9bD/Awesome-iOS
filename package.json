@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "react-native bundle --entry-file index.js --bundle-output ./Awesome-iOS/bundle/index.jsbundle --platform ios --assets-dest ./HybridExample/bundle --dev false"
+    "bundle": "react-native bundle --entry-file index.js --bundle-output ./Awesome-iOS/bundle/index.jsbundle --platform ios --assets-dest ./Awesome-iOS/bundle --dev false"
   },
   "dependencies": {
     "eslint": "^3.17.0",

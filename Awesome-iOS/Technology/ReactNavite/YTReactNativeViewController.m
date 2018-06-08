@@ -1,37 +1,26 @@
 //
-//  ViewController.m
+//  YTReactNativeViewController.m
 //  Awesome-iOS
 //
 //  Created by Cyandnow on 2018/4/19.
 //  Copyright © 2018年 Cyandnow. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "YTReactNativeViewController.h"
+
 #import <React/RCTRootView.h>
 #import <React/RCTBundleURLProvider.h>
 
-@interface ViewController ()
+@interface YTReactNativeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation YTReactNativeViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)buttonTouchUpInside:(UIButton *)sender {
-    
-    // NSURL *JSCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
-   NSURL *JSCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"
-                                                                          fallbackResource:nil];
+- (void)loadView {
+//    NSURL *JSCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"
+//                                                                           fallbackResource:nil];
+    NSURL *JSCodeLocation = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"jsbundle"];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:JSCodeLocation
                                                         moduleName:@"RNHighScores"
                                                  initialProperties:@{
@@ -47,11 +36,18 @@
                                                                              ]
                                                                      }
                                                      launchOptions:nil];
-    UIViewController *viewController = UIViewController.new;
-    viewController.view = rootView;
-    [self presentViewController:viewController animated:YES completion:nil];
+    self.view = rootView;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end

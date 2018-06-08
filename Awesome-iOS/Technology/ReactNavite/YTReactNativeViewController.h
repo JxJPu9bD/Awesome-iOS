@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YTReactNativeViewController.h
 //  Awesome-iOS
 //
 //  Created by Cyandnow on 2018/4/19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface YTReactNativeViewController : UIViewController
 
 
 @end

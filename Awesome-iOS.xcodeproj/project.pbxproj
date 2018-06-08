@@ -7,29 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69BB3CC2C4FED67A98084FA3 /* libPods-Awesome-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362799CD04BE1EF47D3362CA /* libPods-Awesome-iOS.a */; };
-		9E0A8EBA208DAB7500ECF3B0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0A8EB9208DAB7500ECF3B0 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		9E0A8EBC208DABA500ECF3B0 /* XCTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9E0A8EB9208DAB7500ECF3B0 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69BB3CC2C4FED67A98084FA3 /* libPods-Awesome-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362799CD04BE1EF47D3362CA /* libPods-Awesome-iOS.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		9E2009CC20CA1A1400337438 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2009CB20CA1A1400337438 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9E7ABEE520C6753A00C1793F /* YTExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ABEE420C6753A00C1793F /* YTExampleTableViewController.m */; };
 		9ED814E22088280D00249C58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED814E12088280D00249C58 /* AppDelegate.m */; };
-		9ED814E52088280D00249C58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED814E42088280D00249C58 /* ViewController.m */; };
 		9ED814E82088280D00249C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814E62088280D00249C58 /* Main.storyboard */; };
 		9ED814EA2088280D00249C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814E92088280D00249C58 /* Assets.xcassets */; };
 		9ED814ED2088280D00249C58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814EB2088280D00249C58 /* LaunchScreen.storyboard */; };
 		9ED814F02088280D00249C58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED814EF2088280D00249C58 /* main.m */; };
 		9EEE42EB20AAE5C400DA5453 /* index.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE42E920AAE5C400DA5453 /* index.jsbundle */; };
 		9EEE42EC20AAE5C400DA5453 /* index.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE42EA20AAE5C400DA5453 /* index.jsbundle.meta */; };
+		DC840C2153B7F8289C2D992E /* YTReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC840D90B2B30A6795C8A201 /* YTReactNativeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9E0A8EBB208DAB9400ECF3B0 /* CopyFiles */ = {
+		9E2009CA20CA17BC00337438 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9E0A8EBC208DABA500ECF3B0 /* XCTest.framework in CopyFiles */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -37,14 +36,12 @@
 /* Begin PBXFileReference section */
 		30D6FB0F5D4262F15100FDFB /* Pods-Awesome-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome-iOS/Pods-Awesome-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		362799CD04BE1EF47D3362CA /* libPods-Awesome-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Awesome-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E0A8EB9208DAB7500ECF3B0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9E2009CB20CA1A1400337438 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9E7ABEE320C6753A00C1793F /* YTExampleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTExampleTableViewController.h; sourceTree = "<group>"; };
 		9E7ABEE420C6753A00C1793F /* YTExampleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTExampleTableViewController.m; sourceTree = "<group>"; };
 		9ED814DD2088280D00249C58 /* Awesome-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED814E02088280D00249C58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9ED814E12088280D00249C58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9ED814E32088280D00249C58 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9ED814E42088280D00249C58 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9ED814E72088280D00249C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ED814E92088280D00249C58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ED814EC2088280D00249C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +49,8 @@
 		9ED814EF2088280D00249C58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EEE42E920AAE5C400DA5453 /* index.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.jsbundle; sourceTree = "<group>"; };
 		9EEE42EA20AAE5C400DA5453 /* index.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = file; path = index.jsbundle.meta; sourceTree = "<group>"; };
+		DC8405704EE625BDD4F6D76A /* YTReactNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTReactNativeViewController.h; sourceTree = "<group>"; };
+		DC840D90B2B30A6795C8A201 /* YTReactNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTReactNativeViewController.m; sourceTree = "<group>"; };
 		DC925223F37EF09539A51C0D /* Pods-Awesome-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome-iOS/Pods-Awesome-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E0A8EBA208DAB7500ECF3B0 /* XCTest.framework in Frameworks */,
+				9E2009CC20CA1A1400337438 /* XCTest.framework in Frameworks */,
 				69BB3CC2C4FED67A98084FA3 /* libPods-Awesome-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,10 +79,24 @@
 		8C9C696A6A9AD20D385EAA16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E0A8EB9208DAB7500ECF3B0 /* XCTest.framework */,
+				9E2009CB20CA1A1400337438 /* XCTest.framework */,
 				362799CD04BE1EF47D3362CA /* libPods-Awesome-iOS.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E2009CD20CA1C7B00337438 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Texture;
+			sourceTree = "<group>";
+		};
+		9E2009CE20CA1D3D00337438 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		9E7ABEE620C675A500C1793F /* Main */ = {
@@ -91,8 +104,6 @@
 			children = (
 				9ED814E02088280D00249C58 /* AppDelegate.h */,
 				9ED814E12088280D00249C58 /* AppDelegate.m */,
-				9ED814E32088280D00249C58 /* ViewController.h */,
-				9ED814E42088280D00249C58 /* ViewController.m */,
 				9E7ABEE320C6753A00C1793F /* YTExampleTableViewController.h */,
 				9E7ABEE420C6753A00C1793F /* YTExampleTableViewController.m */,
 				9ED814E62088280D00249C58 /* Main.storyboard */,
@@ -127,6 +138,7 @@
 			children = (
 				9EEE42E820AAE5C400DA5453 /* bundle */,
 				9E7ABEE620C675A500C1793F /* Main */,
+				DC84072BFBFEC0F9E3D44E6A /* Technology */,
 			);
 			path = "Awesome-iOS";
 			sourceTree = "<group>";
@@ -138,6 +150,25 @@
 				9EEE42EA20AAE5C400DA5453 /* index.jsbundle.meta */,
 			);
 			path = bundle;
+			sourceTree = "<group>";
+		};
+		DC840637C214EF4A0B5D28F8 /* ReactNavite */ = {
+			isa = PBXGroup;
+			children = (
+				DC8405704EE625BDD4F6D76A /* YTReactNativeViewController.h */,
+				DC840D90B2B30A6795C8A201 /* YTReactNativeViewController.m */,
+			);
+			path = ReactNavite;
+			sourceTree = "<group>";
+		};
+		DC84072BFBFEC0F9E3D44E6A /* Technology */ = {
+			isa = PBXGroup;
+			children = (
+				DC840637C214EF4A0B5D28F8 /* ReactNavite */,
+				9E2009CD20CA1C7B00337438 /* Texture */,
+				9E2009CE20CA1D3D00337438 /* Masonry */,
+			);
+			path = Technology;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +184,7 @@
 				9ED814DB2088280D00249C58 /* Resources */,
 				02832A8EAE86B828D6C2EB26 /* [CP] Embed Pods Frameworks */,
 				5E7DD86D06C060A8CA5061E1 /* [CP] Copy Pods Resources */,
-				9E0A8EBB208DAB9400ECF3B0 /* CopyFiles */,
-				9E0A8F0E208DB5E500ECF3B0 /* Bundle React Native code and images */,
+				9E2009CA20CA17BC00337438 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,20 +311,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9E0A8F0E208DB5E500ECF3B0 /* Bundle React Native code and images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native code and images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n./node_modules/react-native/scripts/react-native-xcode.sh";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -302,10 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ED814E52088280D00249C58 /* ViewController.m in Sources */,
 				9E7ABEE520C6753A00C1793F /* YTExampleTableViewController.m in Sources */,
 				9ED814F02088280D00249C58 /* main.m in Sources */,
 				9ED814E22088280D00249C58 /* AppDelegate.m in Sources */,
+				DC840C2153B7F8289C2D992E /* YTReactNativeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
