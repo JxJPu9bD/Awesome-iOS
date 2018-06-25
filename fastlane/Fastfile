@@ -1,0 +1,78 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "最终还是使用git的提交版本作为打包的build号"
+  def update_build_number
+    build = `git rev-list HEAD | wc -l | awk "{print $1}"`
+    puts("***| 更新build #{build} |***")
+    increment_build_number(
+        build_number: "#{build}"
+    )
+  end
+
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    ENV["MATCH_KEYCHAIN_PASSWORD"] = "icey520"
+    ENV["MATCH_PASSWORD"] = "Huangxiaoer2"
+    ENV["FASTLANE_PASSWORD"] = "Huangxiaoer2"
+    cocoapods
+    # carthage
+  end
+
+  desc "Submit a new local Build to Pgyer"
+  desc "This will also make sure the profile is up to date"
+  lane :app_debug do
+    # match(
+    #     type: "development",
+    #     app_identifier: "todo",
+    #     force_for_new_devices: true
+    # ) # more information: https://codesigning.guide
+    date = Time.new
+    gym(
+        scheme: "Awesome-iOS",
+        configuration: "Debug",
+        export_method: "ad-hoc",
+        output_name: "app-debug-" + date.strftime("%m-%d %H:%M"),
+        clean: true,
+        output_directory: "./ipa"
+    ) # Build your app - more options available
+    # 帐号归属 dev@cyandnow.com 
+    pgyer(
+        api_key: "d585f4929120bb6a482c7f29f23f1dad",
+        user_key: "82c59c4106c1bae8d5ef94dd369bf24e"
+    )
+
+    desc "Submit a new release Build to Pgyer"
+    desc "This will also make sure the profile is up to date"
+    lane :app_release do
+    # match(
+    #     type: "development",
+    #     app_identifier: "todo",
+    #     force_for_new_devices: true
+    # ) # more information: https://codesigning.guide
+    date = Time.new
+    gym(
+        scheme: "Awesome-iOS",
+        configuration: "Release",
+        export_method: "ad-hoc",
+        output_name: "app-release-" + date.strftime("%m-%d %H:%M"),
+        clean: true,
+        output_directory: "./ipa"
+    ) # Build your app - more options available
+    # 帐号归属 test@cyandnow.com
+    pgyer(
+        api_key: "dcaad2e3613657dc34443f0434dde2ee",
+        user_key: "1136851dddfdc3d2a40f1ba73f1a9306"
+    )
+end

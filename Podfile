@@ -45,5 +45,6 @@ target 'Awesome-iOS' do
   react_native
 
   pod 'Texture', '~> 2.7'
+  pod 'JPush', '~> 3.0.9'
 
 end
