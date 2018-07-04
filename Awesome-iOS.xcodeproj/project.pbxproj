@@ -10,16 +10,17 @@
 		69BB3CC2C4FED67A98084FA3 /* libPods-Awesome-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362799CD04BE1EF47D3362CA /* libPods-Awesome-iOS.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		9E2009CC20CA1A1400337438 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2009CB20CA1A1400337438 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9E2009D120CA1FA400337438 /* ObjC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2009D020CA1FA400337438 /* ObjC.storyboard */; };
+		9E3D55AD20E4736700AFF057 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D55AC20E4736600AFF057 /* Settings.bundle */; };
 		9E7ABEE520C6753A00C1793F /* YTExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ABEE420C6753A00C1793F /* YTExampleTableViewController.m */; };
 		9ED814E22088280D00249C58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED814E12088280D00249C58 /* AppDelegate.m */; };
 		9ED814E82088280D00249C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814E62088280D00249C58 /* Main.storyboard */; };
 		9ED814EA2088280D00249C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814E92088280D00249C58 /* Assets.xcassets */; };
 		9ED814ED2088280D00249C58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814EB2088280D00249C58 /* LaunchScreen.storyboard */; };
 		9ED814F02088280D00249C58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED814EF2088280D00249C58 /* main.m */; };
+		9EDE0A7F20E3497400D804DD /* CYNCenterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDE0A7E20E3497400D804DD /* CYNCenterTableViewController.m */; };
 		9EEE42EB20AAE5C400DA5453 /* index.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE42E920AAE5C400DA5453 /* index.jsbundle */; };
 		9EEE42EC20AAE5C400DA5453 /* index.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE42EA20AAE5C400DA5453 /* index.jsbundle.meta */; };
 		DC840C2153B7F8289C2D992E /* YTReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC840D90B2B30A6795C8A201 /* YTReactNativeViewController.m */; };
-		DC840E7AD30125D05D4973F4 /* AppDelegate+CYNSetupPush.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8407677A463BC0A0455006 /* AppDelegate+CYNSetupPush.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,7 @@
 		362799CD04BE1EF47D3362CA /* libPods-Awesome-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Awesome-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2009CB20CA1A1400337438 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9E2009D020CA1FA400337438 /* ObjC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObjC.storyboard; sourceTree = "<group>"; };
+		9E3D55AC20E4736600AFF057 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		9E4F411A20E077B900ADEA0C /* Awesome-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Awesome-iOS.entitlements"; sourceTree = "<group>"; };
 		9E7ABEE320C6753A00C1793F /* YTExampleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTExampleTableViewController.h; sourceTree = "<group>"; };
 		9E7ABEE420C6753A00C1793F /* YTExampleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTExampleTableViewController.m; sourceTree = "<group>"; };
@@ -51,11 +53,11 @@
 		9ED814EC2088280D00249C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ED814EE2088280D00249C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ED814EF2088280D00249C58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EDE0A7D20E3497400D804DD /* CYNCenterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNCenterTableViewController.h; sourceTree = "<group>"; };
+		9EDE0A7E20E3497400D804DD /* CYNCenterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNCenterTableViewController.m; sourceTree = "<group>"; };
 		9EEE42E920AAE5C400DA5453 /* index.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.jsbundle; sourceTree = "<group>"; };
 		9EEE42EA20AAE5C400DA5453 /* index.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = file; path = index.jsbundle.meta; sourceTree = "<group>"; };
 		DC8405704EE625BDD4F6D76A /* YTReactNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTReactNativeViewController.h; sourceTree = "<group>"; };
-		DC8407677A463BC0A0455006 /* AppDelegate+CYNSetupPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CYNSetupPush.m"; sourceTree = "<group>"; };
-		DC840B15AD22B3A6B32009D8 /* AppDelegate+CYNSetupPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CYNSetupPush.h"; sourceTree = "<group>"; };
 		DC840D90B2B30A6795C8A201 /* YTReactNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTReactNativeViewController.m; sourceTree = "<group>"; };
 		DC925223F37EF09539A51C0D /* Pods-Awesome-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome-iOS/Pods-Awesome-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,8 @@
 		9E2009D320CA21E600337438 /* 个人中心 */ = {
 			isa = PBXGroup;
 			children = (
+				9EDE0A7D20E3497400D804DD /* CYNCenterTableViewController.h */,
+				9EDE0A7E20E3497400D804DD /* CYNCenterTableViewController.m */,
 			);
 			path = "个人中心";
 			sourceTree = "<group>";
@@ -149,8 +153,7 @@
 				9ED814EB2088280D00249C58 /* LaunchScreen.storyboard */,
 				9ED814EE2088280D00249C58 /* Info.plist */,
 				9ED814EF2088280D00249C58 /* main.m */,
-				DC8407677A463BC0A0455006 /* AppDelegate+CYNSetupPush.m */,
-				DC840B15AD22B3A6B32009D8 /* AppDelegate+CYNSetupPush.h */,
+				9E3D55AC20E4736600AFF057 /* Settings.bundle */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				02832A8EAE86B828D6C2EB26 /* [CP] Embed Pods Frameworks */,
 				5E7DD86D06C060A8CA5061E1 /* [CP] Copy Pods Resources */,
 				9E2009CA20CA17BC00337438 /* Embed Frameworks */,
+				9E3D55AE20E475BE00AFF057 /* [CYN] Setting */,
 			);
 			buildRules = (
 			);
@@ -289,6 +293,7 @@
 				9EEE42EB20AAE5C400DA5453 /* index.jsbundle in Resources */,
 				9E2009D120CA1FA400337438 /* ObjC.storyboard in Resources */,
 				9EEE42EC20AAE5C400DA5453 /* index.jsbundle.meta in Resources */,
+				9E3D55AD20E4736700AFF057 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +367,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9E3D55AE20E475BE00AFF057 /* [CYN] Setting */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CYN] Setting";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#获取Bundle Version\n#version=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${PROJECT_NAME}/Main/${INFOPLIST_FILE}\")\necho \"cyandnow-run-script\"\n\nversion=\"1.0.0\"\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:0:DefaultValue ${version}\" \"${PROJECT_DIR}/Settings.bundle/Root.plist\"\necho ${PROJECT_DIR}\necho \"cyandnow-run-script\"\n#获取Git当前分支\nbranch=`git rev-parse --abbrev-ref HEAD | awk '{print $1}'`\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue ${branch}\" \"${PROJECT_DIR}/${PROJECT_NAME}/Main/Settings.bundle/Root.plist\"\n\n#获取Git当前Commit SHA1值\ncommit=`git rev-parse --short HEAD | awk '{print $1}'`\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:2:DefaultValue ${commit}\" \"${PROJECT_DIR}/${PROJECT_NAME}/Main/Settings.bundle/Root.plist\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -370,10 +389,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7ABEE520C6753A00C1793F /* YTExampleTableViewController.m in Sources */,
+				9EDE0A7F20E3497400D804DD /* CYNCenterTableViewController.m in Sources */,
 				9ED814F02088280D00249C58 /* main.m in Sources */,
 				9ED814E22088280D00249C58 /* AppDelegate.m in Sources */,
 				DC840C2153B7F8289C2D992E /* YTReactNativeViewController.m in Sources */,
-				DC840E7AD30125D05D4973F4 /* AppDelegate+CYNSetupPush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,8 +528,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Awesome-iOS/Awesome-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = W5U8BWD4MB;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Awesome-iOS/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,14 +549,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Awesome-iOS/Awesome-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W5U8BWD4MB;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Awesome-iOS/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cyandnow.demo.Awesome-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "3e1a88c0-46e2-4961-8ac7-a80cce1fa1c3";
+				PROVISIONING_PROFILE_SPECIFIER = "Awesome iOS Ad Hoc";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

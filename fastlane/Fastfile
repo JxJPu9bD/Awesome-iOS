@@ -13,6 +13,7 @@ default_platform(:ios)
 
 platform :ios do
   desc "最终还是使用git的提交版本作为打包的build号"
+
   def update_build_number
     build = `git rev-list HEAD | wc -l | awk "{print $1}"`
     puts("***| 更新build #{build} |***")
@@ -26,8 +27,35 @@ platform :ios do
     ENV["MATCH_KEYCHAIN_PASSWORD"] = "icey520"
     ENV["MATCH_PASSWORD"] = "Huangxiaoer2"
     ENV["FASTLANE_PASSWORD"] = "Huangxiaoer2"
-    cocoapods
+    # cocoapods
     # carthage
+  end
+
+  desc "Use OCLint"
+  lane :lint do
+    sh lint.sh
+    # oclint(
+    #     compile_commands: "compile_commands.json", # The JSON compilation database, use xctool reporter "json-compilation-database"
+    #     select_regex: /Awesome-iOS/, # Select all files matching this regex
+    #     exclude_regex: /Pods/, # Exclude all files matching this regex
+    #     report_type: "pmd", # The type of the report (default: html)
+    #     max_priority_1: 10, # The max allowed number of priority 1 violations
+    #     max_priority_2: 100, # The max allowed number of priority 2 violations
+    #     max_priority_3: 1000, # The max allowed number of priority 3 violations
+    #     thresholds: [# Override the default behavior of rules
+    #         "LONG_LINE=200",
+    #         "LONG_METHOD=200"
+    #     ],
+    #     enable_rules: [# List of rules to pick explicitly
+    #         "DoubleNegative",
+    #         "SwitchStatementsDon'TNeedDefaultWhenFullyCovered"
+    #     ],
+    #     disable_rules: ["GotoStatement"], # List of rules to disable
+    #     list_enabled_rules: true, # List enabled rules
+    #     enable_clang_static_analyzer: true, # Enable Clang Static Analyzer, and integrate results into OCLint report
+    #     enable_global_analysis: true, # Compile every source, and analyze across global contexts (depends on number of source files, could results in high memory load)
+    #     allow_duplicated_violations: true # Allow duplicated violations in the OCLint report
+    # )
   end
 
   desc "Submit a new local Build to Pgyer"
@@ -41,21 +69,26 @@ platform :ios do
     date = Time.new
     gym(
         scheme: "Awesome-iOS",
-        configuration: "Debug",
-        export_method: "ad-hoc",
-        output_name: "app-debug-" + date.strftime("%m-%d %H:%M"),
         clean: true,
-        output_directory: "./ipa"
+        configuration: "Debug",
+        export_method: "development",
+        output_name: "app-debug-" + date.strftime("%m-%d %H:%M"),
+        output_directory: "./ipa",
+        xcpretty_report_json: './lint/compile_commands.json'
+    # provisioningProfiles: {
+    #     "com.cyandnow.demo.Awesome-iOS" => "Awesome iOS Ad Hoc"
+    # }
     ) # Build your app - more options available
     # 帐号归属 dev@cyandnow.com 
     pgyer(
         api_key: "d585f4929120bb6a482c7f29f23f1dad",
         user_key: "82c59c4106c1bae8d5ef94dd369bf24e"
     )
+  end
 
-    desc "Submit a new release Build to Pgyer"
-    desc "This will also make sure the profile is up to date"
-    lane :app_release do
+  desc "Submit a new release Build to Pgyer"
+  desc "This will also make sure the profile is up to date"
+  lane :app_release do
     # match(
     #     type: "development",
     #     app_identifier: "todo",
@@ -64,15 +97,19 @@ platform :ios do
     date = Time.new
     gym(
         scheme: "Awesome-iOS",
+        clean: true,
         configuration: "Release",
         export_method: "ad-hoc",
         output_name: "app-release-" + date.strftime("%m-%d %H:%M"),
-        clean: true,
         output_directory: "./ipa"
+    # provisioningProfiles: {
+    #     "com.cyandnow.demo.Awesome-iOS" => "Awesome iOS Ad Hoc"
+    # }
     ) # Build your app - more options available
     # 帐号归属 test@cyandnow.com
     pgyer(
         api_key: "dcaad2e3613657dc34443f0434dde2ee",
         user_key: "1136851dddfdc3d2a40f1ba73f1a9306"
     )
+  end
 end

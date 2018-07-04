@@ -57,6 +57,12 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
+# OCLint
+
+lint/compile-commands.json
+lint/*.xml
+lint/*.html
+
 # Code Injection
 #
 # After new code Injection tools there's a generated folder /iOSInjectionProject

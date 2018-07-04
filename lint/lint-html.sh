@@ -1,0 +1,25 @@
+#! /bin/bash
+oclint-json-compilation-database \
+    -e Pods \
+    -e node_modules \
+    -e Library \
+    -e ipa \
+    -e fastlane \
+    -- \
+    -stats \
+    -verbose \
+    -report-type=html -o=oclint.html \
+    -max-priority-1=99999 -max-priority-2=99999 -max-priority-3=99999 \
+    -rc LONG_LINE=200 \
+    -rc LONG_METHOD=100 \
+    -rc LONG_VARIABLE_NAME=40 \
+    -disable-rule=BrokenOddnessCheck \
+    -disable-rule=VerifyProhibitedCall \
+    -disable-rule=VerifyProtectedMethod \
+    -disable-rule=SubclassMustImplement \
+    -disable-rule=BaseClassDestructorShouldBeVirtualOrProtected \
+    -disable-rule=DestructorOfVirtualClass \
+    -disable-rule=ParameterReassignment \
+    -disable-rule=AvoidDefaultArgumentsOnVirtualMethods \
+    -disable-rule=AvoidPrivateStaticMembers \
+    -disable-rule=TooManyParameters
