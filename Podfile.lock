@@ -1,14 +1,38 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - boost-for-react-native (1.63.0)
+  - CYNBaseComponent (0.1.0):
+    - AFNetworking (~> 3.2.1)
+    - HHRouter
+    - MJExtension (~> 3.0.13)
+    - MJRefresh (~> 3.1.15.3)
+    - RTRootNavigationController (~> 0.6.7)
   - DoubleConversion (1.1.5)
   - Folly (2016.09.26.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
   - glog (0.3.4)
+  - HHRouter (0.1.9)
   - JCore (1.1.9)
   - JPush (3.0.9):
     - JCore (~> 1.1.7)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.3)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -83,6 +107,9 @@ PODS:
     - React/RCTBlob
   - React/tvOS (0.55.3):
     - React/Core
+  - RTRootNavigationController (0.6.7):
+    - RTRootNavigationController/Core (= 0.6.7)
+  - RTRootNavigationController/Core (0.6.7)
   - Texture (2.7):
     - Texture/PINRemoteImage (= 2.7)
   - Texture/Core (2.7)
@@ -93,6 +120,7 @@ PODS:
   - yoga (0.55.3.React)
 
 DEPENDENCIES:
+  - CYNBaseComponent (from `./Library/ObjC/CYNBaseComponent/`)
   - DoubleConversion (from `./node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `./node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `./node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -126,6 +154,8 @@ DEPENDENCIES:
   - yoga (from `./node_modules/react-native/ReactCommon/yoga`)
 
 EXTERNAL SOURCES:
+  CYNBaseComponent:
+    :path: ./Library/ObjC/CYNBaseComponent/
   DoubleConversion:
     :podspec: ./node_modules/react-native/third-party-podspecs/DoubleConversion.podspec
   Folly:
@@ -138,19 +168,25 @@ EXTERNAL SOURCES:
     :path: ./node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  CYNBaseComponent: 8334597733eb407817634d9f0f55a6436a8bf47d
   DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
   Folly: 211775e49d8da0ca658aebc8eab89d642935755c
   glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
+  HHRouter: c096524e95a07a1970e6e23a19ee5a9592dc326d
   JCore: 27598485098d0db99d2812cba048003457d08cfb
   JPush: 003d9eaef8ba2df76de32573d0c8aa62b92b3c82
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   React: 573d89cf10312b17920df6328eaf9ab8059283bf
+  RTRootNavigationController: d6aa6cbb78a3eaecea4f6e4df63f15dd887836b8
   Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
   yoga: 9403c2451c1b47d8cee3e4f1b6fd0ececc63839c
 
-PODFILE CHECKSUM: 1e2d0e0bbcb31479a73d02a71a004797a3ad4fae
+PODFILE CHECKSUM: 9c1d9d1f7be46bb583a97335834303d17b9db866
 
 COCOAPODS: 1.3.1

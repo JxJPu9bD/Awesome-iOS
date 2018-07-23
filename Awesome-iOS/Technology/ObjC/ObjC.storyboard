@@ -30,7 +30,7 @@
         <!--首页-->
         <scene sceneID="wyt-uh-kd2">
             <objects>
-                <viewController id="neQ-jk-Bjm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CYNHomeViewController" id="neQ-jk-Bjm" customClass="CYNHomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zh-oz-rVA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                                                 <rect key="frame" x="0.0" y="128" width="374" height="374"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="t6T-Le-BRW">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CYNHomeTableViewCell" id="t6T-Le-BRW">
                                                         <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t6T-Le-BRW" id="Kj9-0N-b24">
@@ -96,6 +96,10 @@
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <sections/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="neQ-jk-Bjm" id="cXa-aH-cHQ"/>
+                                                    <outlet property="delegate" destination="neQ-jk-Bjm" id="ouO-Tg-JPt"/>
+                                                </connections>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,6 +135,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="9qh-q0-9de"/>
                     <navigationItem key="navigationItem" title="首页" id="sXz-Aa-q4I"/>
+                    <connections>
+                        <outlet property="tableView" destination="bHy-zP-Co4" id="5zU-Me-uDR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zkm-vO-PuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

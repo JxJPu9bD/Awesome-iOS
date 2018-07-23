@@ -17,6 +17,8 @@
 		9ED814EA2088280D00249C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814E92088280D00249C58 /* Assets.xcassets */; };
 		9ED814ED2088280D00249C58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814EB2088280D00249C58 /* LaunchScreen.storyboard */; };
 		9ED814F02088280D00249C58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED814EF2088280D00249C58 /* main.m */; };
+		9ED9653020EE0DB0007897EB /* CYNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9652F20EE0DB0007897EB /* CYNHomeViewController.m */; };
+		9ED9653320EE0FD9007897EB /* CYNMessageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9653220EE0FD9007897EB /* CYNMessageDetailViewController.m */; };
 		9EDE0A7F20E3497400D804DD /* CYNCenterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDE0A7E20E3497400D804DD /* CYNCenterTableViewController.m */; };
 		9EEE42EB20AAE5C400DA5453 /* index.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE42E920AAE5C400DA5453 /* index.jsbundle */; };
 		9EEE42EC20AAE5C400DA5453 /* index.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE42EA20AAE5C400DA5453 /* index.jsbundle.meta */; };
@@ -53,6 +55,10 @@
 		9ED814EC2088280D00249C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ED814EE2088280D00249C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ED814EF2088280D00249C58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ED9652E20EE0DB0007897EB /* CYNHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNHomeViewController.h; sourceTree = "<group>"; };
+		9ED9652F20EE0DB0007897EB /* CYNHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNHomeViewController.m; sourceTree = "<group>"; };
+		9ED9653120EE0FD9007897EB /* CYNMessageDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNMessageDetailViewController.h; sourceTree = "<group>"; };
+		9ED9653220EE0FD9007897EB /* CYNMessageDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNMessageDetailViewController.m; sourceTree = "<group>"; };
 		9EDE0A7D20E3497400D804DD /* CYNCenterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNCenterTableViewController.h; sourceTree = "<group>"; };
 		9EDE0A7E20E3497400D804DD /* CYNCenterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNCenterTableViewController.m; sourceTree = "<group>"; };
 		9EEE42E920AAE5C400DA5453 /* index.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.jsbundle; sourceTree = "<group>"; };
@@ -121,6 +127,10 @@
 		9E2009D220CA21DE00337438 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				9ED9652E20EE0DB0007897EB /* CYNHomeViewController.h */,
+				9ED9652F20EE0DB0007897EB /* CYNHomeViewController.m */,
+				9ED9653120EE0FD9007897EB /* CYNMessageDetailViewController.h */,
+				9ED9653220EE0FD9007897EB /* CYNMessageDetailViewController.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -340,9 +350,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Awesome-iOS/Pods-Awesome-iOS-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/CYNBaseComponent/CYNBaseComponent.bundle,
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -390,9 +404,11 @@
 			files = (
 				9E7ABEE520C6753A00C1793F /* YTExampleTableViewController.m in Sources */,
 				9EDE0A7F20E3497400D804DD /* CYNCenterTableViewController.m in Sources */,
+				9ED9653020EE0DB0007897EB /* CYNHomeViewController.m in Sources */,
 				9ED814F02088280D00249C58 /* main.m in Sources */,
 				9ED814E22088280D00249C58 /* AppDelegate.m in Sources */,
 				DC840C2153B7F8289C2D992E /* YTReactNativeViewController.m in Sources */,
+				9ED9653320EE0FD9007897EB /* CYNMessageDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
