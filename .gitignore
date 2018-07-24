@@ -23,6 +23,7 @@ xcuserdata/
 *.xcscmblueprint
 .idea/
 .vscode/
+ipa/
 
 ## Obj-C/Swift specific
 *.hmap
@@ -71,5 +72,4 @@ lint/*.html
 iOSInjectionProject/
 
 # node.js
-
 node_modules/

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CYNBaseComponent_Example' do
+  pod 'CYNBaseComponent', :path => '../'
+
+  target 'CYNBaseComponent_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
