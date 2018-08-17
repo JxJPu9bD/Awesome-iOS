@@ -47,5 +47,6 @@ target 'Awesome-iOS' do
   pod 'Texture', '~> 2.7'
   pod 'JPush', '~> 3.0.9'
   pod 'CYNBaseComponent', :path => './Library/ObjC/CYNBaseComponent/'
+  pod 'AppCenter'
 
 end

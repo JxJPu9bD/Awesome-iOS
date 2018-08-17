@@ -16,19 +16,25 @@ class RNHighScores extends React.Component {
     );
     return (
       <View style={styles.container}>
-        <Text style={styles.highScoresTitle}>
+        {/* <Text style={styles.highScoresTitle}>
           2048 High Scores!
         </Text>
         <Text style={styles.scores}>
           {contents}
         </Text>
         <Button
-          title="go to profile"
+          title="go to profile error"
           onPress={() =>
             navigator('profile', { name: 'jane' })
           }
-        />
+        /> */}
+        <View style={{ flex: 1 }}>
+            <View style={{flex: 1, backgroundColor: 'powderblue'}}/>
+            <View style={{flex: 2, backgroundColor: 'skyblue'}}/>
+            <View style={{flex: 3, backgroundColor: 'stellderblue'}}/>
+        </View>
       </View>
+
     );
   }
 }

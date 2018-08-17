@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "eslint": "^3.17.0",
-    "react": "16.3.1",
-    "react-native": "0.55.3"
+    "react": "^16.4.2",
+    "react-native": "^0.56.0",
+    "react-navigation": "^2.11.2"
   },
   "author": "Cyandnow",
   "license": "MIT",
