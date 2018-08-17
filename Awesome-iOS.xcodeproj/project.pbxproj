@@ -11,6 +11,7 @@
 		9E2009CC20CA1A1400337438 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2009CB20CA1A1400337438 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9E2009D120CA1FA400337438 /* ObjC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2009D020CA1FA400337438 /* ObjC.storyboard */; };
 		9E3D55AD20E4736700AFF057 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D55AC20E4736600AFF057 /* Settings.bundle */; };
+		9E40780F2106AB7500CE88C5 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E40780E2106AB7500CE88C5 /* Swift.storyboard */; };
 		9E7ABEE520C6753A00C1793F /* YTExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ABEE420C6753A00C1793F /* YTExampleTableViewController.m */; };
 		9ED814E22088280D00249C58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED814E12088280D00249C58 /* AppDelegate.m */; };
 		9ED814E82088280D00249C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED814E62088280D00249C58 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		9E2009CB20CA1A1400337438 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9E2009D020CA1FA400337438 /* ObjC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObjC.storyboard; sourceTree = "<group>"; };
 		9E3D55AC20E4736600AFF057 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		9E40780E2106AB7500CE88C5 /* Swift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swift.storyboard; sourceTree = "<group>"; };
 		9E4F411A20E077B900ADEA0C /* Awesome-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Awesome-iOS.entitlements"; sourceTree = "<group>"; };
 		9E7ABEE320C6753A00C1793F /* YTExampleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTExampleTableViewController.h; sourceTree = "<group>"; };
 		9E7ABEE420C6753A00C1793F /* YTExampleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTExampleTableViewController.m; sourceTree = "<group>"; };
@@ -151,6 +153,14 @@
 			path = "TabBar&Navigation";
 			sourceTree = "<group>";
 		};
+		9E40780D2106AB4E00CE88C5 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				9E40780E2106AB7500CE88C5 /* Swift.storyboard */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		9E7ABEE620C675A500C1793F /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +228,7 @@
 		DC84072BFBFEC0F9E3D44E6A /* Technology */ = {
 			isa = PBXGroup;
 			children = (
+				9E40780D2106AB4E00CE88C5 /* Swift */,
 				9E2009CF20CA1F8B00337438 /* ObjC */,
 				DC840637C214EF4A0B5D28F8 /* ReactNavite */,
 				9E2009CD20CA1C7B00337438 /* Texture */,
@@ -301,6 +312,7 @@
 				9ED814EA2088280D00249C58 /* Assets.xcassets in Resources */,
 				9ED814E82088280D00249C58 /* Main.storyboard in Resources */,
 				9EEE42EB20AAE5C400DA5453 /* index.jsbundle in Resources */,
+				9E40780F2106AB7500CE88C5 /* Swift.storyboard in Resources */,
 				9E2009D120CA1FA400337438 /* ObjC.storyboard in Resources */,
 				9EEE42EC20AAE5C400DA5453 /* index.jsbundle.meta in Resources */,
 				9E3D55AD20E4736700AFF057 /* Settings.bundle in Resources */,

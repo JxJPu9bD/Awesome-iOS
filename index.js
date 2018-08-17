@@ -26,8 +26,8 @@ class RNHighScores extends React.Component {
           title="go to profile"
           onPress={() =>
             navigator('profile', { name: 'jane' })
-        }
-          />
+          }
+        />
       </View>
     );
   }

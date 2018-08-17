@@ -18,9 +18,9 @@
 @implementation YTReactNativeViewController
 
 - (void)loadView {
-//    NSURL *JSCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"
-//                                                                           fallbackResource:nil];
-    NSURL *JSCodeLocation = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"jsbundle"];
+    NSURL *JSCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"
+                                                                           fallbackResource:nil];
+//    NSURL *JSCodeLocation = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"jsbundle"];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:JSCodeLocation
                                                         moduleName:@"RNHighScores"
                                                  initialProperties:@{
